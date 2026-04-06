@@ -23,7 +23,6 @@ Project Objective<br>
 ------------------------------------------------
 The project fulfills the following requirements:
 
--------------------------------------------------
 <br>
 User and Role Management<br>
 Financial Records CRUD<br>
@@ -34,6 +33,9 @@ Input Validation and Error Handling<br>
 Data Persistence using MySQL<br>
 API Testing using Postman<br>
 Deployment on Render<br>
+
+------------------------------------------------
+
 Features<br>
 1. User and Role Management<br>
 <br>
