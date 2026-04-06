@@ -210,9 +210,11 @@ Request:
   "role": "ADMIN"
 }
 ```
+```
 -Get All Users: GET /users
 -Get User By ID: GET /users/{id}
 -Delete User: DELETE /users/{id}
+```
 --------------------------------------
 -Finance APIs
 -Create Finance Record: POST /finance
@@ -251,3 +253,72 @@ Monthly Summary: GET /dashboard/monthly
 Recent Transactions: GET /dashboard/recent
 
 ```
+
+How to Run Project
+1.Clone Repository
+```Bash
+git clone https://github.com/nishwan810/finance-dashboard.git
+cd FinanceHub
+```
+2.Create Database
+```SQL
+CREATE DATABASE finance_db;
+```
+3.Update application.properties
+```</>Properties
+spring.datasource.url=jdbc:mysql://localhost:3306/finance_db
+spring.datasource.username=root
+spring.datasource.password=yourpassword
+
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+server.port=8080
+```
+4.Run Project
+```Bash
+mvn spring-boot:run
+```
+Or run from IDE.
+--------------------------------------------
+-Postman Testing
+-Open Postman
+-Create collection
+-Add APIs
+-Use Basic Auth
+-Test endpoints
+<br>
+Postman collection included in repository
+<br>
+<h1>Deployment</h1>
+-Backend deployed on Render
+Base URL: https://finance-dashboard.onrender.com
+Example: https://finance-dashboard.onrender.com/finance
+Sample Credentials
+username: admin@gmail.com
+password: 12345
+Validation Example
+
+Invalid request:
+
+{
+  "amount": -100
+}
+
+Response:
+amount must be positive
+
+Security
+Spring Security implemented
+Uses:
+Basic Authentication
+Password Encoder
+Role-based authorization
+Protected APIs
+Deployment Checklist
+GitHub repository uploaded
+README added
+Postman collection added
+APIs tested
+Security implemented
+MySQL configured
+Render deployed
