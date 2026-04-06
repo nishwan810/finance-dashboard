@@ -7,9 +7,9 @@ FinanceHub is a Spring Boot based backend application that manages financial rec
 This project demonstrates REST API development, Spring Security, JPA, MySQL integration, validation, and backend architecture.
 
 -------------------------------------------------------------------
+<h1>Tech Stack</h1>
 
-
-Java 17
+Java 21
 Spring Boot
 Spring Web
 Spring Data JPA
