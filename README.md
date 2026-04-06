@@ -150,3 +150,12 @@ Validation annotations used:
   "message": "Finance record not found",
   "status": 404
 }
+
+-----
+
+
+**Database
+MySQL database used
+Tables: users, finance
+Hibernate automatically creates tables
+Configuration in application.properties
