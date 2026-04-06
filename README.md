@@ -21,7 +21,7 @@ Render (Deployment)<br>
 Project Objective<br>
 <br>
 ------------------------------------------------
-The project fulfills the following requirements:
+<h1>The project fulfills the following requirements:</h1>
 
 <br>
 User and Role Management<br>
