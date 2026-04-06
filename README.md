@@ -9,42 +9,42 @@ This project demonstrates REST API development, Spring Security, JPA, MySQL inte
 -------------------------------------------------------------------
 <h1>Tech Stack</h1>
 
-Java 21
-Spring Boot
-Spring Web
-Spring Data JPA
-Spring Security
-MySQL
-Lombok
-Maven
-Postman
-Render (Deployment)
-Project Objective
-
+Java 21<br>
+Spring Boot<br>
+Spring Web<br>
+Spring Data JPA<br>
+Spring Security<br>
+MySQL<br>
+Lombok<br>
+Maven<br>
+Postman<br>
+Render (Deployment)<br>
+Project Objective<br>
+<br>
 The project fulfills the following requirements:
-
-User and Role Management
-Financial Records CRUD
-Record Filtering (date, category, type)
-Dashboard Summary APIs
-Role Based Access Control
-Input Validation and Error Handling
-Data Persistence using MySQL
-API Testing using Postman
-Deployment on Render
-Features
-1. User and Role Management
-
-Create and manage users with roles.
-
-Supported roles:
-
-ADMIN
-ANALYST
-VIEWER
-
-Capabilities:
-
+<br>
+User and Role Management<br>
+Financial Records CRUD<br>
+Record Filtering (date, category, type)<br>
+Dashboard Summary APIs<br>
+Role Based Access Control<br>
+Input Validation and Error Handling<br>
+Data Persistence using MySQL<br>
+API Testing using Postman<br>
+Deployment on Render<br>
+Features<br>
+1. User and Role Management<br>
+<br>
+Create and manage users with roles.<br>
+<br>
+Supported roles:<br>
+<br>
+ADMIN<br>
+ANALYST<br>
+VIEWER<br>
+<br>
+Capabilities:<br>
+<br>
 Create user
 Get all users
 Get user by ID
