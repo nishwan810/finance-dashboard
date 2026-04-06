@@ -159,7 +159,7 @@ MySQL database used
 Tables: users, finance
 Hibernate automatically creates tables
 Configuration in application.properties
-
+```
 FinanceHub
 │
 ├── controller
@@ -195,7 +195,7 @@ FinanceHub
 └── FinanceHubApplication
 
 
-
+```
 --------------------------------------
 API Endpoints
 User APIs
