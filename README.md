@@ -150,8 +150,8 @@ Validation annotations used:
   "message": "Finance record not found",
   "status": 404
 }
+```
 
------
 
 
 **Database
@@ -159,3 +159,90 @@ MySQL database used
 Tables: users, finance
 Hibernate automatically creates tables
 Configuration in application.properties
+
+FinanceHub
+│
+├── controller
+│   ├── FinanceController
+│   ├── UserController
+│   └── DashboardController
+│
+├── service
+│   ├── FinanceService
+│   ├── UserService
+│   └── DashboardService
+│
+├── repo
+│   ├── FinanceRepo
+│   └── UserRepo
+│
+├── model
+│   ├── Finance
+│   ├── User
+│   ├── Role
+│   └── RecordType
+│
+├── config
+│   └── SecurityConfig
+│
+├── dto
+│   ├── FinanceDTO
+│   └── UserDTO
+│
+├── exception
+│   └── GlobalExceptionHandler
+│
+└── FinanceHubApplication
+
+
+
+--------------------------------------
+API Endpoints
+User APIs
+
+-Create User: POST /users
+Request:
+```json
+{
+  "name": "Admin",
+  "email": "admin@gmail.com",
+  "password": "12345",
+  "role": "ADMIN"
+}
+```
+-Get All Users: GET /users
+-Get User By ID: GET /users/{id}
+-Delete User: DELETE /users/{id}
+--------------------------------------
+-Finance APIs
+-Create Finance Record: POST /finance
+Request:
+```json
+{
+  "amount": 5000,
+  "category": "Salary",
+  "description": "Monthly salary",
+  "type": "INCOME",
+  "date": "2024-04-01"
+}
+```
+-Get All Finance Records: GET /finance
+-Get Finance By ID: GET /finance/{id}
+-Update Finance: PUT /finance/{id}
+-Delete Finance: DELETE /finance/{id}
+--------------------------------------
+-Filtering API
+-GET /finance/filter
+Examples:
+
+/finance/filter?type=INCOME
+/finance/filter?category=Food
+/finance/filter?startDate=2024-01-01&endDate=2024-03-01
+/finance/filter?type=EXPENSE&category=Food
+---------------------------------------
+Dashboard APIs
+Summary: GET /dashboard/summary
+Category Summary: GET /dashboard/category
+Monthly Summary: GET /dashboard/monthly
+Recent Transactions: GET /dashboard/recent
+
