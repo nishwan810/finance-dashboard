@@ -1,7 +1,7 @@
---------------------------------------
+-----------------------------------------------
 <h1>FinanceHub – Finance Dashboard Backend</h1>
 
----------------------------------------
+------------------------------------------------
 
 FinanceHub is a Spring Boot based backend application that manages financial records, users, roles, dashboard analytics, and secure API access.
 This project demonstrates REST API development, Spring Security, JPA, MySQL integration, validation, and backend architecture.
@@ -21,7 +21,9 @@ Postman<br>
 Render (Deployment)<br>
 Project Objective<br>
 <br>
+------------------------------------------------
 The project fulfills the following requirements:
+-------------------------------------------------
 <br>
 User and Role Management<br>
 Financial Records CRUD<br>
