@@ -226,23 +226,28 @@ Request:
   "date": "2024-04-01"
 }
 ```
+```
 -Get All Finance Records: GET /finance
 -Get Finance By ID: GET /finance/{id}
 -Update Finance: PUT /finance/{id}
 -Delete Finance: DELETE /finance/{id}
+```
 --------------------------------------
 -Filtering API
 -GET /finance/filter
 Examples:
-
+```
 /finance/filter?type=INCOME
 /finance/filter?category=Food
 /finance/filter?startDate=2024-01-01&endDate=2024-03-01
 /finance/filter?type=EXPENSE&category=Food
+```
 ---------------------------------------
 Dashboard APIs
+```
 Summary: GET /dashboard/summary
 Category Summary: GET /dashboard/category
 Monthly Summary: GET /dashboard/monthly
 Recent Transactions: GET /dashboard/recent
 
+```
