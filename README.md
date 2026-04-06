@@ -291,34 +291,36 @@ Postman collection included in repository
 <br>
 <h1>Deployment</h1>
 -Backend deployed on Render
+
+```
 Base URL: https://finance-dashboard.onrender.com
 Example: https://finance-dashboard.onrender.com/finance
+```
 Sample Credentials
+-------------------
 username: admin@gmail.com
 password: 12345
+-------------------
+
 Validation Example
 
 Invalid request:
-
+```JSON
 {
   "amount": -100
 }
+```
 
 Response:
 amount must be positive
 
 Security
-Spring Security implemented
-Uses:
-Basic Authentication
-Password Encoder
-Role-based authorization
-Protected APIs
-Deployment Checklist
-GitHub repository uploaded
-README added
-Postman collection added
-APIs tested
-Security implemented
-MySQL configured
-Render deployed
+
+-Spring Security implemented
+-Uses:
+-Basic Authentication
+-Password Encoder
+-Role-based authorization
+-Protected APIs
+<br>
+
