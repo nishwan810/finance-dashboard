@@ -1,14 +1,18 @@
-# Use Java 17 base image
-FROM eclipse-temurin:17-jdk
+FROM maven:3.9.9-eclipse-temurin-17 AS build
 
-# Set working directory inside container
 WORKDIR /app
 
-# Copy the JAR built by Maven
-COPY target/FinanceHub-0.0.1-SNAPSHOT.jar app.jar
+COPY pom.xml .
+COPY src ./src
 
-# Expose application port
+RUN mvn clean package -DskipTests
+
+FROM eclipse-temurin:17-jdk
+
+WORKDIR /app
+
+COPY --from=build /app/target/FinanceHub-0.0.1-SNAPSHOT.jar app.jar
+
 EXPOSE 8080
 
-# Run the Spring Boot application
-ENTRYPOINT ["java","-jar","app.jar"]
+ENTRYPOINT ["java", "-jar", "app.jar"]
