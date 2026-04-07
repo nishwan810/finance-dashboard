@@ -1,3 +1,4 @@
+# Build and IDE files
 target/
 *.log
 *.class
@@ -6,5 +7,12 @@ target/
 *.iml
 .idea/
 .vscode/
-.env
 .DS_Store
+
+# Environment and secrets
+.env
+src/main/resources/application.properties
+
+# Optional: keep a template for placeholders
+src/main/resources/application.properties.examplerties
+
