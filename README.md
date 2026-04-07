@@ -9,7 +9,7 @@ This project demonstrates:
 - Input validation and error handling  
 - Backend architecture  
 ------------------------------------------------------------------------------------
--Live On Render :- https://finance-dashboard-cjki.onrender.com/
+-Live On Render :- https://finance-dashboard-cjki.onrender.com/dashboard/summary
 
 -POSTMAN Documentation:-https://documenter.getpostman.com/view/40646856/2sBXiqGVDK
 
