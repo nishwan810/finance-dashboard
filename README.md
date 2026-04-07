@@ -9,9 +9,10 @@ This project demonstrates:
 - Input validation and error handling  
 - Backend architecture  
 ------------------------------------------------------------------------------------
-POSTMAN Documentation:-https://documenter.getpostman.com/view/40646856/2sBXiqGVDK
+-POSTMAN Documentation:-https://documenter.getpostman.com/view/40646856/2sBXiqGVDK
 
-POSTMAN JSON FILE :- https://drive.google.com/file/d/1VcXiDtEu1ua5NA39QCsl6-a-h9IXwL91/view?usp=sharing
+-POSTMAN JSON FILE :- https://drive.google.com/file/d/1VcXiDtEu1ua5NA39QCsl6-a-h9IXwL91/view?usp=sharing
+
 ------------------------------------------------------------------------------------
 
 ## Tech Stack
