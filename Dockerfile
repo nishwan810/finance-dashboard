@@ -1,25 +1,14 @@
-# Stage 1: Build the JAR
-FROM maven:3.9.3-eclipse-temurin-17 AS build
-
-WORKDIR /app
-
-# Copy pom.xml and source code
-COPY pom.xml .
-COPY src ./src
-
-# Build the JAR (skip tests for faster build)
-RUN mvn clean package -DskipTests
-
-# Stage 2: Runtime
+# Use Java 17 base image
 FROM eclipse-temurin:17-jdk
 
+# Set working directory inside container
 WORKDIR /app
 
-# Copy JAR from build stage
-COPY --from=build /app/target/FinanceHub-0.0.1-SNAPSHOT.jar app.jar
+# Copy the JAR built by Maven
+COPY target/FinanceHub-0.0.1-SNAPSHOT.jar app.jar
 
-# Expose port
+# Expose application port
 EXPOSE 8080
 
-# Run the app
+# Run the Spring Boot application
 ENTRYPOINT ["java","-jar","app.jar"]
