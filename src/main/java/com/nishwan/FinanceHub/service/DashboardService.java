@@ -7,6 +7,7 @@ import com.nishwan.FinanceHub.repo.FinanceRepo;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -38,7 +39,11 @@ public class DashboardService {
         for (Object[] row : data) {
 
             String category = (String) row[0];
-            Double total = (Double) row[1];
+//            Double total = (Double) row[1];
+
+            // Convert BigDecimal to Double
+            BigDecimal totalBD = (BigDecimal) row[1];
+            Double total = totalBD != null ? totalBD.doubleValue() : 0.0;
 
             result.add(new CategoryDTO(category, total));
         }

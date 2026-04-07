@@ -14,7 +14,7 @@ import java.util.Date;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/api/finances")
 @CrossOrigin
 public class FinanceController {
 
@@ -43,12 +43,12 @@ public class FinanceController {
         );
     }
 
-    @GetMapping("/finances")
+    @GetMapping
     public ResponseEntity<List<Finance>> getFinance(){
         return new ResponseEntity<>(financeservice.getAllFinance(), HttpStatus.OK);
     }
 
-    @GetMapping("/{id:\\\\d+}")
+    @GetMapping("/{id:\\d+}")
     public ResponseEntity<Finance> getFinancebyId(@PathVariable int id){
 
         Finance finance = financeservice.getFinanceById(id);
@@ -59,7 +59,7 @@ public class FinanceController {
             return  new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 
-    @PostMapping("/finances")
+    @PostMapping
     public ResponseEntity<?> addFinance(@RequestBody Finance finance){
 
         Finance savedFinance =financeservice.addFinance(finance);
